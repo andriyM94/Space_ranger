@@ -1,0 +1,157 @@
+/*ігрове поле*/
+#game_area_block{
+	background: #505050;
+	width: 750px;
+	height: 500px;
+	margin: 0 auto;
+	position: relative;
+	background-image: url("../img/2.gif");
+	position: relative;
+	border: 2px solid grey;
+	overflow: hidden;
+}
+/*Стартове поле*/
+#start_game_block{
+	width: 100%;
+	height: 100%;
+	background: #FFF;
+
+}
+#start_game_block img {
+	width: 750px;
+	height: 500px;
+}
+#start_game_block h2 {
+	color: white;
+	font-size: 55px;
+	position: absolute;
+	margin: 0px;
+    top: 30px;
+    right: 80px;
+}
+
+#start_game_block button {
+	padding: 20px 80px;
+	font-size: 34px;
+	position: absolute;
+	top: 360px;
+    left: 230px;
+    color: white;
+    background-color: transparent;
+}
+/* блок пройденої відстанні*/
+#distance_traveled_block {
+	font-size: 34px;
+	color: #cfff0d;
+	font-weight: bold;
+	left: 15px;
+	top: 5px;
+	position: absolute;
+	z-index: 999;
+}
+
+/*Стиль счетчика обратного отсчета*/
+#countdown_block {
+	font-size: 34px;
+    color: white;
+    font-family: monospace;
+    position: absolute;
+    top: 11px;
+    right: 20px;
+    z-index: 999;
+/*==== мигающий стиль текста =====*/
+  -webkit-animation: blink2 1s linear infinite;
+  animation: blink2 1s linear infinite;
+}
+@-webkit-keyframes blink2 {
+  100% { color: rgba(34, 34, 34, 0); }
+}
+@keyframes blink2 {
+  100% { color: rgba(34, 34, 34, 0); }
+}
+/*=================================*/
+
+/* Стилі для блоку життів*/
+#number_of_lives_block {
+	position: absolute;
+	top: 450px;
+	right: 20px;
+	z-index: 999;
+}
+
+#number_of_lives_block span {
+	display: block;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	border: 1px solid yellow;
+	background: red;
+	float: left;
+}
+
+/* стиль для космічного корабля*/
+#spaceship {
+	width: 75px;
+	height: 75px;
+	border-radius: 10px;
+	border: 1px solid white;
+	position: absolute;
+	top: 300px;
+	left: 325px;
+}
+
+#spaceship img {
+	width: 75px;
+	height: 75px;
+}
+
+/* стиль для космічних перешкод*/
+.obstacles {
+	width: 100px;
+	height: 100px;
+	background: red;
+	border: 1px solid white;
+	border-radius: 10px;
+	position: absolute;
+	top: -150px;
+}
+
+/*Стиль блока конца игры*/
+#the_end_game_block {
+	width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+	background-size: 100%;
+}
+
+/*Стль кнопка "Начать заново"*/
+#the_end_game_block button {
+   padding: 20px 80px;
+	font-size: 34px;
+	position: absolute;
+	top: 360px;
+    left: 230px;
+    color: white;
+    background-color: transparent;
+}
+
+#the_end_game_block h3 {
+	position: absolute;
+	margin: 0;
+    top: 75px;
+    right: 50px;
+}
+
+#the_end_game_block h2 {
+	position: absolute;
+	margin: 0px;
+    top: 0px;
+    right: 80px;
+}
+
+#the_end_game_block img {
+	width: 750px;
+	height: 500px;
+}
